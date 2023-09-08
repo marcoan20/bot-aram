@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts",
+    "start": "tsc && node build/utils/deploy-commands.js && node build/server.js",
     "deploy-commands": "tsc && node build/utils/deploy-commands.js"
   },
   "author": "",
